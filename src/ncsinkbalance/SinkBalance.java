@@ -19,7 +19,7 @@ import org.json.simple.parser.JSONParser;
 public class SinkBalance {
 	
 	static final Map<String, Double> SINK_MAP = new HashMap<>();
-	static final Map<String, Integer> SINK_COUNTS = new HashMap<>();
+	static final Map<String, Double> SINK_COUNTS = new HashMap<>();
 	
 	public static void main(String[] args) throws Exception {
 		final JSONParser parser = new JSONParser();
@@ -42,12 +42,19 @@ public class SinkBalance {
 				if (i > 0) ext = filename.substring(i + 1);
 				
 				if (ext.equalsIgnoreCase("json")) {
-					JSONObject obj = (JSONObject)((JSONObject)parser.parse(new FileReader(file))).get("HeatSinks");
+					JSONObject info = (JSONObject)parser.parse(new FileReader(file));
+					String dims = (String)info.get("InteriorDimensions");
+					
+					int x = Integer.parseInt(dims.substring(0, dims.indexOf(',')));
+					int y = Integer.parseInt((dims = dims.substring(2)).substring(0, dims.indexOf(',')));
+					int z = Integer.parseInt(dims.substring(2));
+					
+					JSONObject obj = (JSONObject)info.get("HeatSinks");
 					
 					for (String sink : sinks) {
 						JSONArray arr = (JSONArray)obj.get(sink);
 						if (arr == null) continue;
-						SINK_COUNTS.put(sink, SINK_COUNTS.get(sink) + arr.size());
+						SINK_COUNTS.put(sink, SINK_COUNTS.get(sink) + arr.size()/Math.cbrt(x*y*z));
 					}
 				}
 			}
@@ -74,7 +81,7 @@ public class SinkBalance {
 	
 	static void addSink(String name, double cooling_rate) {
 		SINK_MAP.put(name, cooling_rate);
-		SINK_COUNTS.put(name, 0);
+		SINK_COUNTS.put(name, 0D);
 	}
 	
 	static String decimalPlaces(double number, int places) {

@@ -1,0 +1,55 @@
+{
+  "SaveVersion": {
+    "Major": 2,
+    "Minor": 0,
+    "Build": 26,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "HeatSinks": {
+    "Copper": [
+      "1,3,1",
+      "1,3,3",
+      "3,3,5",
+      "5,3,1",
+      "5,3,3"
+    ],
+    "Water": [
+      "2,3,1",
+      "2,3,3",
+      "3,3,4",
+      "4,3,1",
+      "4,3,3"
+    ],
+    "Iron": [
+      "2,3,2",
+      "4,3,2"
+    ]
+  },
+  "Moderators": {
+    "Graphite": [],
+    "Beryllium": [
+      "3,2,1",
+      "3,2,3",
+      "3,3,2",
+      "3,4,1",
+      "3,4,3"
+    ],
+    "HeavyWater": []
+  },
+  "Conductors": [],
+  "Reflectors": [
+    "3,1,1",
+    "3,1,3",
+    "3,5,1",
+    "3,5,3"
+  ],
+  "FuelCells": {
+    "[OX]LEU-235;True": [
+      "3,3,1",
+      "3,3,3"
+    ]
+  },
+  "InteriorDimensions": "5,5,5"
+}
