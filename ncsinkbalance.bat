@@ -1,1 +1,1 @@
-java -jar ncsinkbalance.jar
+java -jar ncsinkbalance.jar 2 1.5
