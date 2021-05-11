@@ -1,0 +1,24 @@
+{
+  "SaveVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 21,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "CompressedReactor": [
+    {
+      "FuelCell": [
+        "13,13,13"
+      ]
+    }
+  ],
+  "InteriorDimensions": "24,24,24",
+  "UsedFuel": {
+    "Name": "HECf-251 Oxide",
+    "BasePower": 1260.0,
+    "BaseHeat": 900.0,
+    "FuelTime": 58000.0
+  }
+}

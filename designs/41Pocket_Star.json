@@ -1,0 +1,35 @@
+{
+  "SaveVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 18,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "CompressedReactor": [
+    {
+      "Lapis": [
+        "1,1,1",
+        "1,1,2",
+        "1,2,2",
+        "2,1,1",
+        "2,2,1",
+        "2,2,2"
+      ]
+    },
+    {
+      "FuelCell": [
+        "1,2,1",
+        "2,1,2"
+      ]
+    }
+  ],
+  "InteriorDimensions": "2,2,2",
+  "UsedFuel": {
+    "Name": "HEP-239 Oxide",
+    "BasePower": 588.0,
+    "BaseHeat": 300.0,
+    "FuelTime": 92000.0
+  }
+}

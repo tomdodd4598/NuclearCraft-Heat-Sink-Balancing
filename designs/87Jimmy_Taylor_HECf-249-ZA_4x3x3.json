@@ -1,0 +1,190 @@
+{
+  "SaveVersion": {
+    "Major": 2,
+    "Minor": 0,
+    "Build": 36,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "HeatSinks": {
+    "Prismarine": [
+      {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 2.0
+      },
+      {
+        "X": 1.0,
+        "Y": 2.0,
+        "Z": 1.0
+      },
+      {
+        "X": 1.0,
+        "Y": 2.0,
+        "Z": 3.0
+      },
+      {
+        "X": 1.0,
+        "Y": 3.0,
+        "Z": 2.0
+      },
+      {
+        "X": 2.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      {
+        "X": 2.0,
+        "Y": 1.0,
+        "Z": 3.0
+      },
+      {
+        "X": 2.0,
+        "Y": 3.0,
+        "Z": 1.0
+      },
+      {
+        "X": 2.0,
+        "Y": 3.0,
+        "Z": 3.0
+      }
+    ],
+    "Water": [
+      {
+        "X": 1.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      {
+        "X": 2.0,
+        "Y": 1.0,
+        "Z": 2.0
+      },
+      {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 1.0
+      },
+      {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 3.0
+      },
+      {
+        "X": 2.0,
+        "Y": 3.0,
+        "Z": 2.0
+      }
+    ],
+    "Gold": [
+      {
+        "X": 3.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      {
+        "X": 3.0,
+        "Y": 1.0,
+        "Z": 3.0
+      },
+      {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 1.0
+      },
+      {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      }
+    ],
+    "Iron": [
+      {
+        "X": 3.0,
+        "Y": 1.0,
+        "Z": 2.0
+      },
+      {
+        "X": 3.0,
+        "Y": 2.0,
+        "Z": 1.0
+      },
+      {
+        "X": 3.0,
+        "Y": 2.0,
+        "Z": 3.0
+      },
+      {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 2.0
+      }
+    ],
+    "EndStone": [
+      {
+        "X": 4.0,
+        "Y": 1.0,
+        "Z": 2.0
+      },
+      {
+        "X": 4.0,
+        "Y": 2.0,
+        "Z": 1.0
+      },
+      {
+        "X": 4.0,
+        "Y": 2.0,
+        "Z": 3.0
+      }
+    ]
+  },
+  "Moderators": {
+    "Graphite": [],
+    "Beryllium": [
+      {
+        "X": 3.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    ],
+    "HeavyWater": []
+  },
+  "Conductors": [],
+  "Reflectors": {
+    "Beryllium-Carbon": [
+      {
+        "X": 4.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    ]
+  },
+  "FuelCells": {
+    "[ZA]HECf-249;True;Cf-252": [
+      {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    ]
+  },
+  "InteriorDimensions": {
+    "X": 4.0,
+    "Y": 3.0,
+    "Z": 3.0
+  },
+  "CoolantRecipeName": "Water to High Pressure Steam",
+  "ReactorOverallStats": {
+    "TotalOutput": 119.77801405844637,
+    "RawOutput": 1916.448224935142,
+    "TotalHeatPerTick": 2028.0,
+    "TotalCoolingPerTick": 2030.0,
+    "NetHeatPerTick": -2.0,
+    "OverallEfficiency": 0.94499419375500093,
+    "OverallHeatMultiplier": 1.0,
+    "FunctionalBlocks": 27,
+    "TotalInteriorBlocks": 36,
+    "SparsityPenaltyMultiplier": 1.0
+  }
+}

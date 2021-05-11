@@ -33,6 +33,9 @@ public class SinkBalance {
 			}
 		}
 		
+		double dimPow = args.length < 1 ? 3 : Double.parseDouble(args[0]);
+		double countPow = args.length < 2 ? 2 : Double.parseDouble(args[1]);
+		
 		File[] files = new File("designs").listFiles();
 		final List<String> sinks = new ArrayList<>(SINK_MAP.keySet());
 		for (File file : files) {
@@ -43,25 +46,52 @@ public class SinkBalance {
 				
 				if (ext.equalsIgnoreCase("json")) {
 					JSONObject info = (JSONObject)parser.parse(new FileReader(file));
-					String dims = (String)info.get("InteriorDimensions");
 					
-					int x = Integer.parseInt(dims.substring(0, dims.indexOf(',')));
-					int y = Integer.parseInt((dims = dims.substring(2)).substring(0, dims.indexOf(',')));
-					int z = Integer.parseInt(dims.substring(2));
+					JSONObject versionInfo = (JSONObject)info.get("SaveVersion");
+					if (versionInfo == null || ((Long)versionInfo.get("Major")).intValue() < 2) continue;
+					if (((Long)versionInfo.get("Minor")).intValue() < 1 && ((Long)versionInfo.get("Build")).intValue() < 35) continue;
 					
-					JSONObject obj = (JSONObject)info.get("HeatSinks");
+					int x = 1, y = 1, z = 1;
+					Object dimInfo = info.get("InteriorDimensions");
+					if (dimInfo instanceof JSONObject) {
+						JSONObject dims = (JSONObject)dimInfo;
+						Object xInfo = dims.get("X");
+						if (xInfo instanceof Double) {
+							x = ((Double)xInfo).intValue();
+							y = ((Double)dims.get("Y")).intValue();
+							z = ((Double)dims.get("Z")).intValue();
+						}
+						else if (xInfo instanceof Long) {
+							x = ((Long)xInfo).intValue();
+							y = ((Long)dims.get("Y")).intValue();
+							z = ((Long)dims.get("Z")).intValue();
+						}
+						else continue;
+					}
+					else if (dimInfo instanceof String) {
+						String dims = (String)dimInfo;
+						int index = dims.indexOf(',');
+						x = Integer.parseInt(dims.substring(0, index));
+						dims = dims.substring(index + 1);
+						index = dims.indexOf(',');
+						y = Integer.parseInt(dims.substring(0, index));
+						z = Integer.parseInt(dims.substring(index + 1));
+					}
+					else continue;
+					
+					JSONObject sinkInfo = (JSONObject)info.get("HeatSinks");
 					
 					for (String sink : sinks) {
-						JSONArray arr = (JSONArray)obj.get(sink);
+						JSONArray arr = (JSONArray)sinkInfo.get(sink);
 						if (arr == null) continue;
-						SINK_COUNTS.put(sink, SINK_COUNTS.get(sink) + arr.size()/Math.cbrt(x*y*z));
+						SINK_COUNTS.put(sink, SINK_COUNTS.get(sink) + arr.size()/Math.pow(x*y*z, 1D/dimPow));
 					}
 				}
 			}
 		}
 		
 		for (String sink : sinks) {
-			SINK_MAP.put(sink, SINK_MAP.get(sink)*SINK_MAP.get(sink)*SINK_COUNTS.get(sink));
+			SINK_MAP.put(sink, Math.pow(SINK_MAP.get(sink), countPow)*SINK_COUNTS.get(sink));
 		}
 		
 		List<Entry<String, Double>> list = new ArrayList<>(SINK_MAP.entrySet());

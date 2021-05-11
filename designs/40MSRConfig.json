@@ -1,0 +1,361 @@
+{
+  "saveVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 22,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "Fission": {
+    "Power": 1.0,
+    "FuelUse": 1.0,
+    "HeatGeneration": 1.0,
+    "MinSize": 1,
+    "MaxSize": 24,
+    "NeutronReach": 4,
+    "ModeratorExtraPower": 1.0,
+    "ModeratorExtraHeat": 2.0,
+    "ActiveCoolerMaxRate": 0
+  },
+  "ResourceCosts": {},
+  "Fuels": {
+    "TBU": {
+      "BasePower": 60.0,
+      "BaseHeat": 60.0,
+      "FuelTime": 144000.0
+    },
+    "TBU Oxide": {
+      "BasePower": 84.0,
+      "BaseHeat": 84.0,
+      "FuelTime": 144000.0
+    },
+    "LEU-233": {
+      "BasePower": 144.0,
+      "BaseHeat": 144.0,
+      "FuelTime": 64000.0
+    },
+    "LEU-233 Oxide": {
+      "BasePower": 201.6,
+      "BaseHeat": 201.6,
+      "FuelTime": 64000.0
+    },
+    "HEU-233": {
+      "BasePower": 576.0,
+      "BaseHeat": 576.0,
+      "FuelTime": 64000.0
+    },
+    "HEU-233 Oxide": {
+      "BasePower": 806.4,
+      "BaseHeat": 806.4,
+      "FuelTime": 64000.0
+    },
+    "LEU-235": {
+      "BasePower": 120.0,
+      "BaseHeat": 120.0,
+      "FuelTime": 72000.0
+    },
+    "LEU-235 Oxide": {
+      "BasePower": 168.0,
+      "BaseHeat": 168.0,
+      "FuelTime": 72000.0
+    },
+    "HEU-235": {
+      "BasePower": 480.0,
+      "BaseHeat": 480.0,
+      "FuelTime": 72000.0
+    },
+    "HEU-235 Oxide": {
+      "BasePower": 672.0,
+      "BaseHeat": 672.0,
+      "FuelTime": 72000.0
+    },
+    "LEN-236": {
+      "BasePower": 90.0,
+      "BaseHeat": 90.0,
+      "FuelTime": 102000.0
+    },
+    "LEN-236 Oxide": {
+      "BasePower": 126.0,
+      "BaseHeat": 126.0,
+      "FuelTime": 102000.0
+    },
+    "HEN-236": {
+      "BasePower": 360.0,
+      "BaseHeat": 360.0,
+      "FuelTime": 102000.0
+    },
+    "HEN-236 Oxide": {
+      "BasePower": 504.0,
+      "BaseHeat": 504.0,
+      "FuelTime": 102000.0
+    },
+    "LEP-239": {
+      "BasePower": 105.0,
+      "BaseHeat": 105.0,
+      "FuelTime": 92000.0
+    },
+    "LEP-239 Oxide": {
+      "BasePower": 147.0,
+      "BaseHeat": 147.0,
+      "FuelTime": 92000.0
+    },
+    "HEP-239": {
+      "BasePower": 420.0,
+      "BaseHeat": 420.0,
+      "FuelTime": 92000.0
+    },
+    "HEP-239 Oxide": {
+      "BasePower": 588.0,
+      "BaseHeat": 588.0,
+      "FuelTime": 92000.0
+    },
+    "LEP-241": {
+      "BasePower": 165.0,
+      "BaseHeat": 165.0,
+      "FuelTime": 60000.0
+    },
+    "LEP-241 Oxide": {
+      "BasePower": 231.0,
+      "BaseHeat": 231.0,
+      "FuelTime": 60000.0
+    },
+    "HEP-241": {
+      "BasePower": 660.0,
+      "BaseHeat": 660.0,
+      "FuelTime": 60000.0
+    },
+    "HEP-241 Oxide": {
+      "BasePower": 924.0,
+      "BaseHeat": 924.0,
+      "FuelTime": 60000.0
+    },
+    "MOX-239": {
+      "BasePower": 155.4,
+      "BaseHeat": 155.4,
+      "FuelTime": 84000.0
+    },
+    "MOX-241": {
+      "BasePower": 243.6,
+      "BaseHeat": 243.6,
+      "FuelTime": 56000.0
+    },
+    "LEA-242": {
+      "BasePower": 192.0,
+      "BaseHeat": 192.0,
+      "FuelTime": 54000.0
+    },
+    "LEA-242 Oxide": {
+      "BasePower": 268.8,
+      "BaseHeat": 268.8,
+      "FuelTime": 54000.0
+    },
+    "HEA-242": {
+      "BasePower": 768.0,
+      "BaseHeat": 768.0,
+      "FuelTime": 54000.0
+    },
+    "HEA-242 Oxide": {
+      "BasePower": 1075.2,
+      "BaseHeat": 1075.2,
+      "FuelTime": 54000.0
+    },
+    "LECm-243": {
+      "BasePower": 210.0,
+      "BaseHeat": 210.0,
+      "FuelTime": 52000.0
+    },
+    "LECm-243 Oxide": {
+      "BasePower": 294.0,
+      "BaseHeat": 294.0,
+      "FuelTime": 52000.0
+    },
+    "HECm-243": {
+      "BasePower": 840.0,
+      "BaseHeat": 840.0,
+      "FuelTime": 52000.0
+    },
+    "HECm-243 Oxide": {
+      "BasePower": 1176.0,
+      "BaseHeat": 1176.0,
+      "FuelTime": 52000.0
+    },
+    "LECm-245": {
+      "BasePower": 162.0,
+      "BaseHeat": 162.0,
+      "FuelTime": 68000.0
+    },
+    "LECm-245 Oxide": {
+      "BasePower": 226.8,
+      "BaseHeat": 226.8,
+      "FuelTime": 68000.0
+    },
+    "HECm-245": {
+      "BasePower": 648.0,
+      "BaseHeat": 648.0,
+      "FuelTime": 68000.0
+    },
+    "HECm-245 Oxide": {
+      "BasePower": 907.2,
+      "BaseHeat": 907.2,
+      "FuelTime": 68000.0
+    },
+    "LECm-247": {
+      "BasePower": 138.0,
+      "BaseHeat": 138.0,
+      "FuelTime": 78000.0
+    },
+    "LECm-247 Oxide": {
+      "BasePower": 193.2,
+      "BaseHeat": 193.2,
+      "FuelTime": 78000.0
+    },
+    "HECm-247": {
+      "BasePower": 552.0,
+      "BaseHeat": 552.0,
+      "FuelTime": 78000.0
+    },
+    "HECm-247 Oxide": {
+      "BasePower": 772.8,
+      "BaseHeat": 772.8,
+      "FuelTime": 78000.0
+    },
+    "LEB-248": {
+      "BasePower": 135.0,
+      "BaseHeat": 135.0,
+      "FuelTime": 86000.0
+    },
+    "LEB-248 Oxide": {
+      "BasePower": 189.0,
+      "BaseHeat": 189.0,
+      "FuelTime": 86000.0
+    },
+    "HEB-248": {
+      "BasePower": 540.0,
+      "BaseHeat": 540.0,
+      "FuelTime": 86000.0
+    },
+    "HEB-248 Oxide": {
+      "BasePower": 756.0,
+      "BaseHeat": 756.0,
+      "FuelTime": 86000.0
+    },
+    "LECf-249": {
+      "BasePower": 216.0,
+      "BaseHeat": 216.0,
+      "FuelTime": 60000.0
+    },
+    "LECf-249 Oxide": {
+      "BasePower": 302.4,
+      "BaseHeat": 302.4,
+      "FuelTime": 60000.0
+    },
+    "HECf-249": {
+      "BasePower": 864.0,
+      "BaseHeat": 864.0,
+      "FuelTime": 60000.0
+    },
+    "HECf-249 Oxide": {
+      "BasePower": 1209.6,
+      "BaseHeat": 1209.6,
+      "FuelTime": 60000.0
+    },
+    "LECf-251": {
+      "BasePower": 225.0,
+      "BaseHeat": 225.0,
+      "FuelTime": 58000.0
+    },
+    "LECf-251 Oxide": {
+      "BasePower": 315.0,
+      "BaseHeat": 315.0,
+      "FuelTime": 58000.0
+    },
+    "HECf-251": {
+      "BasePower": 900.0,
+      "BaseHeat": 900.0,
+      "FuelTime": 58000.0
+    },
+    "HECf-251 Oxide": {
+      "BasePower": 1260.0,
+      "BaseHeat": 1260.0,
+      "FuelTime": 58000.0
+    }
+  },
+  "Coolers": {
+    "Water": {
+      "HeatPassive": 240.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Reactor Cell or active Moderator"
+    },
+    "Redstone": {
+      "HeatPassive": 360.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Reactor Cell"
+    },
+    "Quartz": {
+      "HeatPassive": 360.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one active Moderator"
+    },
+    "Gold": {
+      "HeatPassive": 480.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Water cooler & Redstone cooler"
+    },
+    "Glowstone": {
+      "HeatPassive": 520.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least two active Moderators"
+    },
+    "Lapis": {
+      "HeatPassive": 480.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Reactor Cell and one Reactor Casing"
+    },
+    "Diamond": {
+      "HeatPassive": 600.0,
+      "HeatActive": 0.0,
+      "Requirements": "One Water cooler and one Quartz cooler"
+    },
+    "Helium": {
+      "HeatPassive": 560.0,
+      "HeatActive": 0.0,
+      "Requirements": "ONLY one Redstone cooler and at least one Reactor Casing"
+    },
+    "Enderium": {
+      "HeatPassive": 480.0,
+      "HeatActive": 0.0,
+      "Requirements": "Three Reactor Casings (has to be in a corner)"
+    },
+    "Cryotheum": {
+      "HeatPassive": 640.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least two Reactor Cells"
+    },
+    "Iron": {
+      "HeatPassive": 320.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Gold cooler"
+    },
+    "Emerald": {
+      "HeatPassive": 640.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Moderator and one Reactor Cell"
+    },
+    "Copper": {
+      "HeatPassive": 320.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Glowstone Cooler"
+    },
+    "Tin": {
+      "HeatPassive": 480.0,
+      "HeatActive": 0.0,
+      "Requirements": "Two Lapis Coolers on opposite sides (same axis)"
+    },
+    "Magnesium": {
+      "HeatPassive": 440.0,
+      "HeatActive": 0.0,
+      "Requirements": "At least one Reactor Casing and one active Moderator"
+    }
+  }
+}

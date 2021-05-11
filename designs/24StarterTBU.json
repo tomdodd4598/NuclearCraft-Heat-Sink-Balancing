@@ -1,0 +1,48 @@
+{
+  "SaveVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 22,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "CompressedReactor": [
+    {
+      "FuelCell": [
+        "1,1,1",
+        "1,1,3",
+        "3,1,1",
+        "3,1,3"
+      ]
+    },
+    {
+      "Graphite": [
+        "1,1,2",
+        "1,2,1",
+        "1,2,3",
+        "2,1,1",
+        "2,1,3",
+        "3,1,2",
+        "3,2,1",
+        "3,2,3"
+      ]
+    },
+    {
+      "Active Water": [
+        "1,2,2",
+        "2,1,2",
+        "2,2,1",
+        "2,2,3",
+        "3,2,2"
+      ]
+    }
+  ],
+  "InteriorDimensions": "3,2,3",
+  "UsedFuel": {
+    "Name": "TBU",
+    "BasePower": 60.0,
+    "BaseHeat": 18.0,
+    "FuelTime": 144000.0
+  }
+}

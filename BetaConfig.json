@@ -2,7 +2,7 @@
   "saveVersion": {
     "Major": 2,
     "Minor": 1,
-    "Build": 5,
+    "Build": 8,
     "Revision": 0,
     "MajorRevision": 0,
     "MinorRevision": 0
@@ -971,7 +971,7 @@
       "Requirements": "One FuelCell; One Moderator"
     },
     "Quartz": {
-      "HeatPassive": 75.0,
+      "HeatPassive": 80.0,
       "Requirements": "One Redstone heatsink"
     },
     "Obsidian": {
@@ -983,16 +983,16 @@
       "Requirements": "One Obsidian heatsink"
     },
     "Glowstone": {
-      "HeatPassive": 100.0,
+      "HeatPassive": 90.0,
       "Requirements": "Two Moderators"
     },
     "Lapis": {
-      "HeatPassive": 95.0,
+      "HeatPassive": 100.0,
       "Requirements": "One FuelCell; One Casing"
     },
     "Gold": {
       "HeatPassive": 110.0,
-      "Requirements": "Two Iron heatsinks"
+      "Requirements": "Exactly Two Iron heatsinks"
     },
     "Prismarine": {
       "HeatPassive": 115.0,
@@ -1007,19 +1007,19 @@
       "Requirements": "One Reflector"
     },
     "Purpur": {
-      "HeatPassive": 90.0,
-      "Requirements": "Exactly One Iron heatsink; One EndStone heatsink"
+      "HeatPassive": 95.0,
+      "Requirements": "One Iron heatsink; One Reflector"
     },
     "Diamond": {
-      "HeatPassive": 195.0,
+      "HeatPassive": 200.0,
       "Requirements": "One Gold heatsink; One FuelCell"
     },
     "Emerald": {
-      "HeatPassive": 190.0,
+      "HeatPassive": 195.0,
       "Requirements": "One Prismarine heatsink; One Moderator"
     },
     "Copper": {
-      "HeatPassive": 80.0,
+      "HeatPassive": 75.0,
       "Requirements": "One Water heatsink"
     },
     "Tin": {
@@ -1031,7 +1031,7 @@
       "Requirements": "One Iron heatsink"
     },
     "Boron": {
-      "HeatPassive": 165.0,
+      "HeatPassive": 160.0,
       "Requirements": "Exactly One Quartz heatsink; One Casing"
     },
     "Lithium": {
@@ -1047,7 +1047,7 @@
       "Requirements": "Two FuelCells"
     },
     "Aluminum": {
-      "HeatPassive": 185.0,
+      "HeatPassive": 175.0,
       "Requirements": "One Quartz heatsink; One Lapis heatsink"
     },
     "Silver": {
@@ -1055,11 +1055,11 @@
       "Requirements": "Two Glowstone heatsinks; One Tin heatsink"
     },
     "Fluorite": {
-      "HeatPassive": 175.0,
+      "HeatPassive": 165.0,
       "Requirements": "One Gold heatsink; One Prismarine heatsink"
     },
     "Villiaumite": {
-      "HeatPassive": 160.0,
+      "HeatPassive": 180.0,
       "Requirements": "One EndStone heatsink; One Redstone heatsink"
     },
     "Carobbiite": {
@@ -1071,12 +1071,12 @@
       "Requirements": "Axial Reflectors"
     },
     "Nitrogen": {
-      "HeatPassive": 180.0,
+      "HeatPassive": 185.0,
       "Requirements": "Two Copper heatsinks; One Purpur heatsink"
     },
     "Helium": {
-      "HeatPassive": 200.0,
-      "Requirements": "Exactly Two Redstone heatsinks; One Casing"
+      "HeatPassive": 190.0,
+      "Requirements": "Exactly Two Redstone heatsinks"
     },
     "Enderium": {
       "HeatPassive": 155.0,
