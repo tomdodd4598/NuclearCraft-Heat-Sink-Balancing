@@ -16,7 +16,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class SinkBalance {
+public class Main {
 	
 	static final Map<String, Double> SINK_MAP = new HashMap<>();
 	static final Map<String, Double> SINK_COUNTS = new HashMap<>();
